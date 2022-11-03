@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:dart_future/src/model/planeta.dart';
 import 'package:http/http.dart' as http;
@@ -21,4 +22,18 @@ Future<void> planetas() async{
     client.close();
   }
   print(listaPlanetas);
+}
+
+int idPlaneta() {
+  print("Introduce la id del planeta del que quieras ver la poblacion:");
+  for (int i = 0;i<listaPlanetas.length;i++) {
+    print("${i+1} -->  ${listaPlanetas[i].name}");
+  }
+  stdout.writeln("id:");
+  int id = int.parse(stdin.readLineSync()!);
+  return id; 
+}
+
+Future <void> poblacion(int id) async {
+  
 }
