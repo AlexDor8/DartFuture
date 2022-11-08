@@ -11,6 +11,7 @@ export 'dart_future_base.dart';
 // TODO: Export any libraries intended for clients of this package.
 
 
-void main(List<String> args) {
-  planetas();
+void main(List<String> args) async{
+  await planetas();
+  //client.close();
 }
