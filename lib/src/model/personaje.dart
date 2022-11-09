@@ -5,10 +5,11 @@ class Personaje {
   late int height;
   late String gender;
   late Planeta planeta;
+  late String homeworld;
 
   Personaje(this.name, this.height, this.gender, this.planeta);
 
-  Personaje.persosnajeNombre(this.name);
+  Personaje.persosnajeNombre(this.name, this.homeworld);
 
   @override
   String toString() {

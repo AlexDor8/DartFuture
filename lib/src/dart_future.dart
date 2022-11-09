@@ -13,5 +13,4 @@ export 'dart_future_base.dart';
 
 void main(List<String> args) async{
   await planetas();
-  //client.close();
 }
